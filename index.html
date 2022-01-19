@@ -2,10 +2,14 @@
 <html>
   <head>
     <title>Swimmy the Fish NFT</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Search Engine Description -->
     <meta
       description="Swimmy the Fish is an upcoming NFT hosted on the Etherium blockchain,
       consisting of 10000 unique fishies!"
     />
+    <!-- Facebook/Linkedin Sharing -->
     <meta
       property="og:description"
       content="Swimmy the Fish is an upcoming NFT hosted on the Etherium blockchain,
@@ -13,6 +17,7 @@
     />
     <meta property="og:title" content="Swimmy the Fish - the happiest NFT!" />
     <meta property="og:type" content="Article" />
+    <!-- Twitter Sharing -->
     <meta property="twitter:card" content="summary" />
     <meta
       property="twitter:description"
@@ -23,15 +28,71 @@
       property="twitter:title"
       content="Swimmy the Fish - the happiest NFT!"
     />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.10.0/dist/css/uikit.min.css"
+    />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.0/dist/js/uikit-icons.min.js"></script>
   </head>
 
-  <body>
-    <h1>Swimmy the Fish!</h1>
+  <nav class="uk-navbar-container" uk-navbar uk-sticky>
+    <div class="uk-navbar-left">
+      <div class="left-indent">
+        <a href="#">Swimmy</a>
+      </div>
+    </div>
+    <div class="uk-navbar-right">
+      <div class="right-indent">
+        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+          <li class="uk-parent">
+            <a href="#">Connect</a>
+            <ul class="uk-nav-sub">
+              <li><a href="https://twitter.com/swimmyandfrands">Twitter</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <p>
-      Swimmy the Fish is an upcoming NFT hosted on the Etherium blockchain,
-      consisting of 10000 unique fishies!
-    </p>
-    <p>Stay tuned for more updates</p>
+  <body>
+    <div
+      class="uk-background-default"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 400px;
+      "
+    >
+      <h1>Swimmy the Fish!</h1>
+
+      <p>
+        Swimmy the Fish is an upcoming NFT hosted on the Etherium blockchain,
+        consisting of 10000 unique fishies!
+      </p>
+      <p>Stay tuned for more updates</p>
+    </div>
+    <div class="uk-background-primary" height="100%">
+      <h2>Glub Glub Gang</h2>
+    </div>
+    <div class="uk-background-muted" height="100%">
+      <h2>Stay Tuned</h2>
+
+      <p>
+        We are launching soon, but keep a fin on our
+        <a href="https://twitter.com/swimmyandfrands">Twitter</a> for more!
+      </p>
+    </div>
+    <footer>
+      <div class="uk-background-secondary">
+        <a href="https://twitter.com/swimmyandfrands">Twitter</a>
+      </div>
+    </footer>
   </body>
 </html>

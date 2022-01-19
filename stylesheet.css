@@ -1,0 +1,20 @@
+html {
+  min-height: 100%;
+}
+
+nav {
+  height: 80px;
+  background: lightblue !important;
+}
+
+body {
+  text-align: center;
+}
+
+.left-indent {
+  padding-left: 16px;
+}
+
+.right-indent {
+  padding-right: 16px;
+}
