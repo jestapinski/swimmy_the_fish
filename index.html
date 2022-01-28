@@ -1,7 +1,9 @@
+<!-- inspired by https://uikitbase.com/preview/?id=10 -->
 <!DOCTYPE html>
 <html>
   <head>
     <title>Swimmy the Fish NFT</title>
+    <link rel="icon" type="image/jpeg" href="images/swimmy.jpeg" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Search Engine Description -->
@@ -17,6 +19,7 @@
     />
     <meta property="og:title" content="Swimmy the Fish - the happiest NFT!" />
     <meta property="og:type" content="Article" />
+    <meta property="og:image" content="images/swimmy.jpeg" />
     <!-- Twitter Sharing -->
     <meta property="twitter:card" content="summary" />
     <meta
@@ -28,71 +31,95 @@
       property="twitter:title"
       content="Swimmy the Fish - the happiest NFT!"
     />
+    <meta property="twitter:image" content="images/swimmy.jpeg" />
+
     <!-- UIkit CSS -->
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/uikit@3.10.0/dist/css/uikit.min.css"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css"
     />
 
     <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.0/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.0/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
   </head>
 
-  <nav class="uk-navbar-container" uk-navbar uk-sticky>
-    <div class="uk-navbar-left">
-      <div class="left-indent">
-        <a href="#">Swimmy</a>
-      </div>
-    </div>
-    <div class="uk-navbar-right">
-      <div class="right-indent">
-        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-          <li class="uk-parent">
-            <a href="#">Connect</a>
-            <ul class="uk-nav-sub">
+  <div
+    class="uk-position-relative uk-background-center-center uk-background-cover"
+    uk-height-viewport
+  >
+    <div
+      class="uk-position-cover"
+      style="
+        background-image: linear-gradient(
+          180deg,
+          rgba(31, 31, 201, 1) 0%,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(0, 212, 255, 1) 100%
+        );
+      "
+    ></div>
+    <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-sticky>
+      <div class="uk-container">
+        <div uk-navbar uk-sticky>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="#">Swimmy</a></li>
               <li><a href="https://twitter.com/swimmyandfrands">Twitter</a></li>
             </ul>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </nav>
-
-  <body>
+    </nav>
     <div
-      class="uk-background-default"
-      style="
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-height: 400px;
-      "
+      class="uk-position-relative uk-container uk-container-small uk-flex uk-flex-middle"
+      uk-height-viewport="offset-top: true"
     >
-      <h1>Swimmy the Fish!</h1>
-
-      <p>
-        Swimmy the Fish is an upcoming NFT hosted on the Etherium blockchain,
-        consisting of 10000 unique fishies!
-      </p>
-      <p>Stay tuned for more updates</p>
-    </div>
-    <div class="uk-background-primary" height="100%">
-      <h2>Glub Glub Gang</h2>
-    </div>
-    <div class="uk-background-muted" height="100%">
-      <h2>Stay Tuned</h2>
-
-      <p>
-        We are launching soon, but keep a fin on our
-        <a href="https://twitter.com/swimmyandfrands">Twitter</a> for more!
-      </p>
-    </div>
-    <footer>
-      <div class="uk-background-secondary">
-        <a href="https://twitter.com/swimmyandfrands">Twitter</a>
+      <div class="uk-section uk-section-regular uk-width-1-1 uk-light">
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-1-1">
+            <img src="images/swimmy.jpeg" height="150" width="150" />
+            <h1 class="uk-heading-small">Swimmy the Fish!</h1>
+            <div class="uk-text-lead">
+              Swimmy the Fish is an upcoming NFT hosted on the Etherium
+              blockchain, consisting of 10000 unique fishies!
+            </div>
+            <br />
+            <div
+              class="uk-child-width-expand@s uk-text-center"
+              uk-grid
+              uk-grid="parallax: 150"
+            >
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Metaverse-Ready</h3>
+                <p>
+                  Stay tuned for our plans on how Swimmy will make its mark on
+                  the metaverse!
+                </p>
+              </div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Colorful</h3>
+                <p>
+                  An adorable sight for the eyes, Swimmy boasts so many cool
+                  colors and gradients!
+                </p>
+              </div>
+            </div>
+            <div
+              class="uk-child-width-expand@s uk-text-center"
+              uk-grid
+              uk-grid="parallax: 150"
+            >
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Accessories</h3>
+                <p>Swimmy can have many different accessories</p>
+              </div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">More soon...</h3>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </div>
 </html>
